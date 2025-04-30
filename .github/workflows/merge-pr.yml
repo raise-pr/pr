@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright...
 
-name: IOSMCN PR Validation-test1
+name: IOSMCN PR Validation
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ on:
 jobs:
 
   staticcheck:
-    runs-on: ubuntu-latest0
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: WillAbides/setup-go-faster@v1.14.0
@@ -106,7 +106,7 @@ jobs:
     env:
       REGISTRY: ghcr.io
       DOCKER_REGISTRY: ghcr.io/
-      DOCKER_REPOSITORY: jeena-reji/
+      DOCKER_REPOSITORY: raise-pr/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
