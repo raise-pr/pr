@@ -89,7 +89,7 @@ jobs:
 
   unit-tests:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'raise-pr'
+    if: github.repository_owner == 'jeena-reji'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
